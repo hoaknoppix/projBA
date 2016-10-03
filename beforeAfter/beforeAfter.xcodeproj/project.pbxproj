@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279F403C5E9604C7FF071606 /* libPods-beforeAfter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C43A1FF4CC81D36A08FC57E1 /* libPods-beforeAfter.a */; };
 		FF5C58C01DA29E06008F4440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5C58BF1DA29E06008F4440 /* AppDelegate.swift */; };
 		FF5C58C21DA29E06008F4440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5C58C11DA29E06008F4440 /* ViewController.swift */; };
 		FF5C58C51DA29E06008F4440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5C58C31DA29E06008F4440 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0268302B8C7A6444D2F7648C /* Pods-beforeAfter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beforeAfter.release.xcconfig"; path = "Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter.release.xcconfig"; sourceTree = "<group>"; };
+		0831FBD07E1A157EB6725FD8 /* Pods-beforeAfter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beforeAfter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter.debug.xcconfig"; sourceTree = "<group>"; };
+		C43A1FF4CC81D36A08FC57E1 /* libPods-beforeAfter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-beforeAfter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5C58BC1DA29E06008F4440 /* beforeAfter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beforeAfter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5C58BF1DA29E06008F4440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5C58C11DA29E06008F4440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279F403C5E9604C7FF071606 /* libPods-beforeAfter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521065F6058171F581BC0D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C43A1FF4CC81D36A08FC57E1 /* libPods-beforeAfter.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3F2B29CEA6B2A55BD3757C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0831FBD07E1A157EB6725FD8 /* Pods-beforeAfter.debug.xcconfig */,
+				0268302B8C7A6444D2F7648C /* Pods-beforeAfter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FF5C58B31DA29E06008F4440 = {
 			isa = PBXGroup;
 			children = (
 				FF5C58BE1DA29E06008F4440 /* beforeAfter */,
 				FF5C58BD1DA29E06008F4440 /* Products */,
+				E3F2B29CEA6B2A55BD3757C2 /* Pods */,
+				521065F6058171F581BC0D9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF5C58CE1DA29E06008F4440 /* Build configuration list for PBXNativeTarget "beforeAfter" */;
 			buildPhases = (
+				25519C57371AB40082E6A9FD /* [CP] Check Pods Manifest.lock */,
 				FF5C58B81DA29E06008F4440 /* Sources */,
 				FF5C58B91DA29E06008F4440 /* Frameworks */,
 				FF5C58BA1DA29E06008F4440 /* Resources */,
+				E5AD2955A2F3DC8E2AB53EF3 /* [CP] Embed Pods Frameworks */,
+				2ECD1B56CC57FAE804AACEF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25519C57371AB40082E6A9FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2ECD1B56CC57FAE804AACEF9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AD2955A2F3DC8E2AB53EF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF5C58B81DA29E06008F4440 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		FF5C58CF1DA29E06008F4440 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0831FBD07E1A157EB6725FD8 /* Pods-beforeAfter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beforeAfter/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		FF5C58D01DA29E06008F4440 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0268302B8C7A6444D2F7648C /* Pods-beforeAfter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = beforeAfter/Info.plist;
@@ -286,6 +363,7 @@
 				FF5C58D01DA29E06008F4440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
