@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "13F75ED716C30CE7E3AC5CD59D766EED10AD6140",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13F75ED716C30CE7E3AC5CD59D766EED10AD6140" : 0,
+    "031047A3265BF90449F8E03E13F5297407849371" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FD862B09-C82D-48C7-A30C-2157DB2F00BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13F75ED716C30CE7E3AC5CD59D766EED10AD6140" : "projBA\/",
+    "031047A3265BF90449F8E03E13F5297407849371" : "notificationLab\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "beforeAfter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "beforeAfter\/beforeAfter.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hoaknoppix\/notificationLab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "031047A3265BF90449F8E03E13F5297407849371"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hoaknoppix\/projBA.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13F75ED716C30CE7E3AC5CD59D766EED10AD6140"
+    }
+  ]
+}

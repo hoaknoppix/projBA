@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		279F403C5E9604C7FF071606 /* libPods-beforeAfter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C43A1FF4CC81D36A08FC57E1 /* libPods-beforeAfter.a */; };
+		FF4634401DAF1E67003C11B7 /* UITouchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46343F1DAF1E67003C11B7 /* UITouchImageView.swift */; };
 		FF5C58C01DA29E06008F4440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5C58BF1DA29E06008F4440 /* AppDelegate.swift */; };
 		FF5C58C21DA29E06008F4440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5C58C11DA29E06008F4440 /* ViewController.swift */; };
 		FF5C58C51DA29E06008F4440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5C58C31DA29E06008F4440 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		0268302B8C7A6444D2F7648C /* Pods-beforeAfter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beforeAfter.release.xcconfig"; path = "Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter.release.xcconfig"; sourceTree = "<group>"; };
 		0831FBD07E1A157EB6725FD8 /* Pods-beforeAfter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beforeAfter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-beforeAfter/Pods-beforeAfter.debug.xcconfig"; sourceTree = "<group>"; };
 		C43A1FF4CC81D36A08FC57E1 /* libPods-beforeAfter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-beforeAfter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF46343F1DAF1E67003C11B7 /* UITouchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITouchImageView.swift; path = ../UITouchImageView.swift; sourceTree = "<group>"; };
 		FF5C58BC1DA29E06008F4440 /* beforeAfter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beforeAfter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5C58BF1DA29E06008F4440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF5C58C11DA29E06008F4440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		FF5C58BE1DA29E06008F4440 /* beforeAfter */ = {
 			isa = PBXGroup;
 			children = (
+				FF46343F1DAF1E67003C11B7 /* UITouchImageView.swift */,
 				FF5C58BF1DA29E06008F4440 /* AppDelegate.swift */,
 				FF5C58C11DA29E06008F4440 /* ViewController.swift */,
 				FF5C58C31DA29E06008F4440 /* Main.storyboard */,
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4634401DAF1E67003C11B7 /* UITouchImageView.swift in Sources */,
 				FF5C58C21DA29E06008F4440 /* ViewController.swift in Sources */,
 				FF5C58C01DA29E06008F4440 /* AppDelegate.swift in Sources */,
 			);
